@@ -13,5 +13,5 @@ class MailDelivary(Delivery):
     def deliver(self, user: User, content: str) -> None:
         context = ssl.create_default_context()
         with smtplib.SMTP_SSL("smtp.gmail.com", self.port, context=context) as server:
-            server.login("sivanandus2003@gmail.com", self.password)
-            server.sendmail("sivanandus2003@gmail.com", user.email, content)
+            server.login("code200.rakathon@gmail.com", self.password)
+            server.sendmail("code200.rakathon@gmail.com", user.email, content)
