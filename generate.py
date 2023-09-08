@@ -18,13 +18,14 @@ else:
         model_path="./model.bin",
         temperature=0.1,
         n_gpu_layers=43,
+        n_ctx=2048,
         verbose=True,
     )
 
 
 business_repo = MongoRepository()
 vector_repo = PineconeRepository(embedding=embedding)
-delivery = Delivery()
+# delivery = Delivery()
 
 generator = Generator(vector_repo=vector_repo, llm=llm)
 
