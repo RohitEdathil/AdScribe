@@ -1,5 +1,5 @@
 from .vector import VectorRepository
-import pinecone
+from langchain.vectorstores import Pinecone, pinecone
 from os import environ
 from langchain.embeddings.base import Embeddings
 
@@ -21,10 +21,11 @@ class PineconeRepository(VectorRepository):
             environment=env,
         )
         self.index = pinecone.Index(index)
+        self.vectorstore = Pinecone(self.index, embedding=embedding, text_key="text")
 
     def ingest(self, product):
         vector = [
-            (product.id, values)
+            (product.id, values, {"text": str(product)})
             for values in self.embedding.embed_documents([str(product)])
         ]
         self.index.upsert(vectors=vector)
