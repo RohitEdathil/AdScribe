@@ -1,0 +1,7 @@
+
+Name :{{name}}
+Age Group : {{age}}
+Email : {{email}}
+Gender : {{gender}}
+Interests : {% for interst in interests %}
+    {{interst}}{% endfor %}

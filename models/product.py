@@ -10,6 +10,13 @@ class Product:
 
     __template__ = open("templates/product.template.txt").read()
 
+    def from_dict(data) -> "Product":
+        return Product(
+            data["name"],
+            data["price"],
+            data["desc"],
+        )
+
     def __str__(self):
         return self.__template__.format(**self.__dict__)
 
