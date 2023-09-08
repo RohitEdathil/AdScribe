@@ -4,6 +4,7 @@ from typing import List
 
 @dataclass
 class Product:
+    id: str
     name: str
     price: float
     description: str
@@ -12,6 +13,7 @@ class Product:
 
     def from_dict(data) -> "Product":
         return Product(
+            data["_id"],
             data["name"],
             data["price"],
             data["desc"],

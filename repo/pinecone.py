@@ -23,5 +23,8 @@ class PineconeRepository(VectorRepository):
         self.index = pinecone.Index(index)
 
     def ingest(self, product):
-        vector = self.embedding.embed_documents([product])
-        self.index.upsert(items=vector)
+        vector = [
+            (product.id, values)
+            for values in self.embedding.embed_documents([str(product)])
+        ]
+        self.index.upsert(vectors=vector)
