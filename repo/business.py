@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
-from ..models import Product, User
+from ..models.product import Product
+from ..models.user import User
 from typing import List
 
 

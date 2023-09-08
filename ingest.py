@@ -1,5 +1,8 @@
 from repo.business import BusinessRepository
-from repo.vector import VectorRepository
+from repo.pinecone import VectorRepository
+from dotenv import load_dotenv
+
+load_dotenv()
 
 bussiness_repo = BusinessRepository()
 vector_repo = VectorRepository()
