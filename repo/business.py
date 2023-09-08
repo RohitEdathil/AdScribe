@@ -1,8 +1,7 @@
 from abc import ABC, abstractmethod
-from ..models.product import Product
-from ..models.user import User
+from models.product import Product
+from models.user import User
 from typing import List
-
 
 class BusinessRepository(ABC):
     @abstractmethod
@@ -10,5 +9,5 @@ class BusinessRepository(ABC):
         pass
 
     @abstractmethod
-    def get_products(self, user_id: int) -> List[Product]:
+    def get_products(self) -> List[Product]:
         pass
