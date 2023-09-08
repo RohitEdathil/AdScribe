@@ -1,11 +1,12 @@
-from repo.business import BusinessRepository
-from repo.pinecone import VectorRepository
+from repo.mongo import MongoRepository
+from repo.pinecone import PineconeRepository
+from langchain.embeddings import OpenAIEmbeddings
 from dotenv import load_dotenv
 
 load_dotenv()
 
-bussiness_repo = BusinessRepository()
-vector_repo = VectorRepository()
+bussiness_repo = MongoRepository()
+vector_repo = PineconeRepository(embedding=OpenAIEmbeddings())
 
 for product in bussiness_repo.get_products():
     vector_repo.ingest(product)

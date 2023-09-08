@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from ..models.product import Product
+from models.product import Product
 from langchain.embeddings.base import Embeddings
 
 
