@@ -1,5 +1,6 @@
 from .vector import VectorRepository
-from langchain.vectorstores import Pinecone, pinecone
+from langchain.vectorstores import Pinecone
+import pinecone
 from os import environ
 from langchain.embeddings.base import Embeddings
 

@@ -1,6 +1,6 @@
 from models.user import User
 from models.prompt import Prompt
-from ..repo.vector import VectorRepository
+from repo.vector import VectorRepository
 from langchain.chains import RetrievalQA
 from langchain.embeddings.base import Embeddings
 from langchain.llms.base import BaseLLM

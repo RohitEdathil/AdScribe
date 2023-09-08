@@ -15,9 +15,9 @@ else:
         model_name="sentence-transformers/all-mpnet-base-v2"
     )
     llm = LlamaCpp(
-        model_url="https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML/resolve/main/llama-2-13b-chat.ggmlv3.q4_0.bin",
+        model_path="./model.bin",
         temperature=0.1,
-        model_kwargs={"n_gpu_layers": 43},
+        n_gpu_layers=43,
         verbose=True,
     )
 
