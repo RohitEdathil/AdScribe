@@ -2,4 +2,5 @@ Following is the details of a user:
 
 {{ user }}
 
-Based on the context, write a personalized marketing email to the user to pitch three of the products which you think the user might be interested in.
+Based on the context, 
+write a personalized marketing email to the user to pitch two products which may be of interest to him/her based on the purchase history, demographics and interests.
