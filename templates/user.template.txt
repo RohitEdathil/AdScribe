@@ -5,3 +5,5 @@ Email : {{email}}
 Gender : {{gender}}
 Interests : {% for interst in interests %}
     {{interst}}{% endfor %}
+Previous Purchases : {% for purchase in purchases %}
+    {{purchase}}{% endfor %}

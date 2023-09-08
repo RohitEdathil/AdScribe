@@ -10,6 +10,7 @@ class User:
     gender: str
     interests: List[str]
     industry: str
+    purchases: List[str]
 
     __template__ = Template(open("templates/user.template.txt").read())
 
@@ -20,7 +21,8 @@ class User:
             data["age"],
             data["gender"],
             data["interest"],
-            data["industry"]
+            data["industry"],
+            data["purchases"]
         )
 
 
