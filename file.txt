@@ -1,0 +1,42 @@
+Name : MacBook Pro 13
+Price : 129900.0
+Description : 
+Chip: Apple M2 chip
+8-core CPU with 4 performance cores and 4 efficiency cores
+10-core GPU
+16-core Neural Engine
+100GB/s memory bandwidth
+Display: Retina display
+33.74 cm / 13.3-inch (diagonal) LED-backlit display with IPS technology
+2560x1600 native resolution at 227 pixels per inch with support for millions of colours
+500 nits brightness
+Battery and Power:Up to 20 hours Apple TV app movie playback
+Up to 17 hours wireless web
+Memory: 8GB unified memory (Configurable to: 16GB or 24GB)
+Storage:256GB SSD (Configurable to: 512GB, 1TB or 2TB)
+Or, 512GB SSD (Configurable to: 1TB or 2TB)
+Charging and Expansion: Two Thunderbolt / USB 4 ports with support for Charging, DisplayPort, Thunderbolt 3 (up to 40 Gbps), 
+USB 4 (up to 40Gbps), USB 3.1 Gen 2 (up to 10 Gbps), and a headphone jack.
+Wireless: Wi-Fi (802.11ax Wi-Fi 6 wireless networking IEEE) and Bluetooth (Bluetooth 5.0 wireless technology)
+Camera: A built-in FaceTime HD camera
+Name : MacBook Pro 13
+Price : 129900.0
+Description : 
+Chip: Apple M2 chip
+8-core CPU with 4 performance cores and 4 efficiency cores
+10-core GPU
+16-core Neural Engine
+100GB/s memory bandwidth
+Display: Retina display
+33.74 cm / 13.3-inch (diagonal) LED-backlit display with IPS technology
+2560x1600 native resolution at 227 pixels per inch with support for millions of colours
+500 nits brightness
+Battery and Power:Up to 20 hours Apple TV app movie playback
+Up to 17 hours wireless web
+Memory: 8GB unified memory (Configurable to: 16GB or 24GB)
+Storage:256GB SSD (Configurable to: 512GB, 1TB or 2TB)
+Or, 512GB SSD (Configurable to: 1TB or 2TB)
+Charging and Expansion: Two Thunderbolt / USB 4 ports with support for Charging, DisplayPort, Thunderbolt 3 (up to 40 Gbps), 
+USB 4 (up to 40Gbps), USB 3.1 Gen 2 (up to 10 Gbps), and a headphone jack.
+Wireless: Wi-Fi (802.11ax Wi-Fi 6 wireless networking IEEE) and Bluetooth (Bluetooth 5.0 wireless technology)
+Camera: A built-in FaceTime HD camera
