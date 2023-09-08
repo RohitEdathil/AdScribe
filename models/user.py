@@ -6,7 +6,7 @@ from typing import List
 class User:
     name: str
     email: str
-    age: int
+    age: str
     gender: str
     interests: List[str]
     industry: str
