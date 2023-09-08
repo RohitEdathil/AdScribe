@@ -6,13 +6,11 @@ import pymongo
 from os import environ
 
 
-class MongoRepository(BusinessRepository) :
 
-
+class MongoRepository(BusinessRepository):
     def __init__(self):
         self.client = pymongo.MongoClient(environ["MONGO_URI"])
         self.database = self.client["vendere"]
-
 
     def get_users(self):
         users = self.database["users"]

@@ -1,5 +1,5 @@
 
-Name : {name}
-Price : {price}
+Name : {{ name }}
+Price : {{ price }}
 Description : 
-{description}
+{{ description }}
