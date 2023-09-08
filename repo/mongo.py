@@ -24,8 +24,6 @@ class MongoRepository(BusinessRepository) :
         for product in products:
             products_mapping[product.id] = product.name
         
-        print(products_mapping)
-
         for user in user_details:
             purchase_names = []
             for purchase in user["purchases"]:
