@@ -1,5 +1,13 @@
 Following is the details of a user:
 
+User Details:
 {{ user }}
 
-Based on the context, write a personalized marketing email to the user to pitch three of the products which you think the user might be interested in.
+Sender Details:
+Name: AdScribe
+Email: code200.rakathon@gmail.com
+
+Based on the context, write a personalized marketing email strictly less than 150 words to the user 
+to pitch a product which may be of interest to him/her based on the purchase history, 
+demographics and interests. 
+
