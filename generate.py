@@ -18,7 +18,7 @@ else:
         model_path="./model.bin",
         temperature=0.1,
         n_gpu_layers=43,
-        n_ctx=2048,
+        n_ctx=3000,
     )
 
 
