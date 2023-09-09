@@ -12,19 +12,19 @@ class PineconeRepository(VectorRepository):
         env = environ["PINECONE_ENV"]
         index = environ["PINECONE_INDEX"]
 
-        if api_key is None or env is None or index is None:
-            raise Exception(
-                "PINECONE_API_KEY, PINECONE_ENV, and PINECONE_INDEX must be set in the environment"
-            )
-
+        # Initialize Pinecone
         pinecone.init(
             api_key=api_key,
             environment=env,
         )
+
+        # Create an index and a vector store
         self.index = pinecone.Index(index)
         self.vectorstore = Pinecone(self.index, embedding=embedding, text_key="text")
 
     def ingest(self, product):
+        """Ingest product into vector store"""
+        # Convert product to (id, vector, metadata)
         vector = [
             (product.id, values, {"text": str(product)})
             for values in self.embedding.embed_documents([str(product)])

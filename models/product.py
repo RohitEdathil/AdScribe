@@ -12,6 +12,7 @@ class Product:
     __template__ = Template(open("templates/product.template.txt").read())
 
     def from_dict(data) -> "Product":
+        """Create Product object from dictionary"""
         return Product(
             data["_id"],
             data["name"],

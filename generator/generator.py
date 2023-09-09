@@ -7,9 +7,13 @@ from langchain.llms.base import BaseLLM
 
 
 class Generator:
+    """Class for generating content"""
+
     def __init__(self, vector_repo: VectorRepository, llm: BaseLLM):
         self.vector_repo = vector_repo
         self.embeddings = vector_repo.embedding
+
+        # Creates a chain for generating content
         self.qa = RetrievalQA.from_chain_type(
             llm=llm,
             chain_type="stuff",
@@ -17,6 +21,7 @@ class Generator:
         )
 
     def generate(self, user: User) -> str:
+        """Generate content for user"""
         prompt = str(Prompt(user))
         answer = self.qa.run(prompt)
         return answer

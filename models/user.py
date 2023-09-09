@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from typing import List
-from jinja2 import Template 
+from jinja2 import Template
+
 
 @dataclass
 class User:
@@ -15,6 +16,7 @@ class User:
     __template__ = Template(open("templates/user.template.txt").read())
 
     def from_dict(data) -> "User":
+        """Create User object from dictionary"""
         return User(
             data["name"],
             data["email"],
@@ -22,9 +24,8 @@ class User:
             data["gender"],
             data["interest"],
             data["industry"],
-            data["purchases"]
+            data["purchases"],
         )
-
 
     def __str__(self):
         return self.__template__.render(**self.__dict__)

@@ -12,4 +12,5 @@ class VectorRepository(ABC):
 
     @abstractmethod
     def ingest(self, product: Product) -> None:
+        """Ingest product into vector store"""
         pass
