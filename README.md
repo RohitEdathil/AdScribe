@@ -77,6 +77,47 @@ wget https://huggingface.co/TheBloke/Firefly-Llama2-13B-v1.2-GGUF/resolve/main/f
 | `SMTP_EMAIL`    | Sender email address |
 | `SMTP_PASSWORD` | Sender password      |
 
+## Database structure
+
+The MongoDB database is assumed to have data with the following structure:
+
+#### users
+
+```json
+{
+  "_id": {
+    "$oid": "64fae3f706a5f0554f808dc8"
+  },
+  "name": "Bob",
+  "age": "40-50",
+  "email": "bob3@gmail.com",
+  "gender": "male",
+  "interest": [
+    "basketball",
+    "travelling",
+    "music",
+    "cooking"
+  ],
+  "industry": "sports",
+  "purchases": [
+    "64fadb4406a5f0554f808dbc"
+  ]
+}
+```
+
+#### products
+
+```json
+{
+  "_id": {
+    "$oid": "64faca6c06a5f0554f808db8"
+  },
+  "name": "MacBook Pro 13",
+  "price": 129900,
+  "desc": "Chip: Apple M2 chip\n8-core CPU with 4 performance cores and 4 efficiency cores\n10-core GPU\n16-core Neural Engine\n100GB/s memory bandwidth\nDisplay: Retina display\n33.74 cm / 13.3-inch (diagonal) LED-backlit display with IPS technology\n2560x1600 native resolution at 227 pixels per inch with support for millions of colours\n500 nits brightness\nBattery and Power:Up to 20 hours Apple TV app movie playback\nUp to 17 hours wireless web\nMemory: 8GB unified memory (Configurable to: 16GB or 24GB)\nStorage:256GB SSD (Configurable to: 512GB, 1TB or 2TB)\nOr, 512GB SSD (Configurable to: 1TB or 2TB)\nCharging and Expansion: Two Thunderbolt / USB 4 ports with support for Charging, DisplayPort, Thunderbolt 3 (up to 40 Gbps), \nUSB 4 (up to 40Gbps), USB 3.1 Gen 2 (up to 10 Gbps), and a headphone jack.\nWireless: Wi-Fi (802.11ax Wi-Fi 6 wireless networking IEEE) and Bluetooth (Bluetooth 5.0 wireless technology)\nCamera: A built-in FaceTime HD camera\n"
+}
+```
+
 ## Usage
 
 This system has two jobs:
